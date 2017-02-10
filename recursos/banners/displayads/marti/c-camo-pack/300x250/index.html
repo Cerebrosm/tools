@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Marti.mx</title>
+<meta name=”ad.size” content=”width=300,height=250”>
+<script type="text/javascript">
+var clickTag = "http://www.google.com"; </script>
+    <!-- css -->
+<style type="text/css">
+    @charset "utf-8";
+/* CSS Document */
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    
+body{margin: 0px;
+
+	
+}
+    
+#contenedor{
+   cursor: pointer;
+	width:300px;
+	height:250px;
+	margin:0 auto;
+	position:absolute;
+	overflow:hidden;
+   left: 0px;
+    top: 0px;
+}
+
+    
+#slider{
+    background-image: url(./images/camo_300x250.jpg);
+    background-repeat: repeat-x;
+	width:300px;
+	height:250px;
+	position:absolute;
+	top:0px;
+	left:0px;
+    animation: animarslider 7s infinite;
+    -moz-animation: animarslider 7s infinite;
+    -o-animation: animarslider 7s infinite;
+    -webkit-animation: animarslider 7s infinite;
+}
+   
+.button {
+    font-family: roboto;
+    top:210px;
+	left:10px;
+    width: 120px;
+    height: 31px;
+    text-align: center;
+    border:none;
+    background: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    position: absolute;
+    pointer-events: all;
+     align-content: center;
+    z-index: 10;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.button p{
+    text-align: center;
+     vertical-align: middle;
+     position: absolute;
+     left: 16%;
+     top: -3px;
+    }
+
+#marti{
+    background-image: url(images/martimx.svg);
+    background-repeat: no-repeat;
+	width:167px;
+	height:21px;
+	position:absolute;
+	top:215px;
+	left:50%;
+    z-index: 9;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+   
+}
+    #contenedor:hover{
+        cursor: pointer;
+    }
+       
+    #contenedor:hover .button{
+        background: #0066ff;
+        top:150px;
+        left: 30%;
+         cursor: pointer;
+        transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    }
+
+    #contenedor:hover #marti{
+        top:100px;
+        height: 90px;
+        width: 250px;
+        left: 10%;
+        transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    }
+    #contenedor:hover .mascara{ visibility: visible;
+    background: rgba(0, 0, 0, 0.7); 
+    transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    }
+.mascara{ visibility: hidden; 
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0,0);
+    left: 0px;
+    top: 0px; 
+  transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    }
+/*--- Animaciones ---*/
+
+
+
+    </style>
+</head>
+
+<body>
+<div id="contenedor" alt="Marti.mx" title="www.marti.mx">
+    <a href="javascript:window.open(window.clickTag)">
+    <div id="slider">
+    </div>
+    <div class="button">
+    <p>   COMPRA AQUÍ </p> 
+    </div>
+    <div id="marti">
+    </div>
+        <div class="mascara">
+        </div>  
+    </a>
+</div>
+</body>
+</html>
+  
+

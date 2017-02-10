@@ -1,0 +1,93 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="js/mov.js"></script>
+<script type="text/javascript">
+var clickTag = "https://www.marti.mx/busqueda?controller=jolisearch&module=ambjolisearch&fc=module&orderby=position&orderway=desc&p=1&search_query=fitbit&submit_search&utm_source=dsp&utm_medium=cerebro-dsp&utm_content=468x60-fitbit&utm_campaign=marti-wearables"; </script>
+<script>
+imagenes = new Array();
+//Agrega tantas imágenes como necesites en el array
+imagenes[0] = "img/info01.png";
+imagenes[1] = "img/info02.png";
+siguiente = 0;
+
+function CambiaImagen()
+{
+dimensiones = $("#box-imagen").width();
+$("#box-imagen img").css({left: -dimensiones+"px"}).attr("src", imagenes[siguiente]);
+$("#box-imagen img").animate({left: "+="+dimensiones});
+$("#box-imagen a").attr("href", imagenes[siguiente]);
+
+siguiente = siguiente+1;
+if (siguiente >= imagenes.length)
+{
+siguiente = 0;
+}
+//Aquí puedes colocar el tiempo para cada transición de imagen
+transicion = 2500;
+setTimeout("CambiaImagen()", transicion);
+}
+
+$(function(){
+CambiaImagen();
+});
+
+</script>
+
+<style>
+
+#box
+{
+width: 468px;
+background-image:url(img/back.jpg);
+background-repeat:no-repeat;
+padding:0px;
+border-radius:0px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#box-imagen{
+width: 468px;
+height: 60px;
+overflow: hidden;
+}
+
+#box-imagen img
+{
+position: relative;
+width: 100%;
+height: 100%;
+}
+</style>
+</head>
+<body>
+<div id="box">
+
+<a href="javascript:window.open(window.clickTag)">
+<div id="box-imagen">
+
+<img src="img/info01.png">
+
+</div>
+</a>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

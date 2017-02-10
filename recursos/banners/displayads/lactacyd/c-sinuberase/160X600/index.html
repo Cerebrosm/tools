@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+    <!-- SCRVERSION: screenad_interface_1.0.3 -->
+    <!-- SCRFORMAT: banner -->
+    <!-- SCRWIDTH: 160 -->
+    <!-- SCRHEIGHT: 600 -->
+    
+
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        #container {
+            cursor: pointer;
+            font-size: 11px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        .imgs{
+            position: absolute;
+            background-size: contain;
+        }
+        #back{
+            background: url('back.jpg') no-repeat;
+            width: 160px;
+            height: 600px;
+            top: 0px;
+            left:0px;
+        }
+        #back2{
+            background: url('back_2.png') no-repeat;
+            background-size: cover;
+            width: 160px;
+            height: 600px;
+            top: 0px;
+            left:0px;
+        }
+        #cuerpo{
+            background: url('cuerpo.png') no-repeat;
+            background-size: contain;
+            width: 160px;
+            height: 262px;
+            top: 338px;
+            left:0px;
+        }
+        #est{
+            background: url('et.png') no-repeat;
+            background-size: contain;
+            width: 160px;
+            height: 160px;
+            top: 250px;
+            left:0px;
+        }
+        #caja{
+            background: url('cajas.png') no-repeat;
+            width: 160px;
+            height: 64px;
+            top: 250px;
+            left:0px;
+        }
+        #pro{
+            background: url('pro.png') no-repeat;
+            width: 71px;
+            height: 62px;
+            top: 200px;
+            left:5px;
+        }
+        #bact{
+            background: url('bac.png') no-repeat;
+            background-size: contain;
+            width: 73px;
+            height: 76px;
+            top: 290px;
+            left:60px;
+        }
+        #tx1{
+            background: url('tx1.png') no-repeat;
+            width: 132px;
+            height: 45px;
+            top: 180px;
+            left:15px;
+        }
+        #tx2{
+            background: url('tx2.png') no-repeat;
+            width: 168px;
+            height: 132px;
+            top: 50px;
+            left: 4px;
+        }
+        #tx3{
+            background: url('tx3.png') no-repeat;
+            width: 79px;
+            height: 19px;
+            top: 100px;
+            left:10px;
+        }
+        #tx4{
+            background: url('tx4.png') no-repeat;
+            width: 123px;
+            height: 20px;
+            top: 125px;
+            left:10px;
+        }
+        #tx5{
+            background: url('tx5.png') no-repeat;
+            width: 75px;
+            height: 15px;
+            top: 155px;
+            left:10px;
+        }
+        #tx6{
+            background: url('tx6.png') no-repeat;
+            width: 141px;
+            height: 16px;
+            top: 175px;
+            left: 10px;
+        }
+        #logo{
+            background: url('logo.png') no-repeat;
+            width: 134px;
+            height: 23px;
+            top: 290px;
+            left: 15px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+
+        var clickTag = "http://cuentademoperformicsmx.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=cl&a.si=820&a.te=1803&a.ra=[RANDOM]&g.lu=";
+
+        function init() {
+
+            screenad.setAlignment('banner', 'banner');
+            screenad.setSize("160px", "600px");
+            screenad.setSticky(true);
+            screenad.setZIndex(1);
+            screenad.setOffset(0, 0)
+            screenad.position();
+           
+        }
+
+        $(document).ready(function(){
+        var tl=new TimelineLite()
+
+            tl.from($("#pleca"),0.5,{opacity:0},0.3),
+            tl.from($("#tx1"),0.5,{opacity:0},0.8),
+            tl.from($("#caja"),0.5,{top:-200},1),
+
+            tl.to($("#tx1"),0.5,{opacity:0},3.5),
+            tl.to($("#caja"),0.5,{top:-200},4),
+
+            tl.from($("#cuerpo"),0.5,{opacity:0},4),
+            tl.from($("#tx2"),0.5,{opacity:0},4.4),
+            tl.from($("#pro"),0.5,{ top: 500, left:60, scale:0.2, opacity:0},4.8),
+            tl.from($("#bact"),0.5,{top: 500, left:60, scale:0.2, opacity:0},5),
+
+            tl.to($("#cuerpo"),0.5,{opacity:0},7.2),
+            tl.to($("#tx2"),0.5,{opacity:0},7.4),
+            tl.to($("#pro"),0.5,{top: 500, left:60, scale:0.2, opacity:0},7.2),
+            tl.to($("#bact"),0.5,{top: 500, left:60, scale:0.2, opacity:0},7.2),
+
+            tl.from($("#tx3"),0.5,{scale:0.5, opacity:0},7.5),
+            tl.from($("#tx4"),0.5,{scale:0.5, opacity:0},7.7),
+            tl.from($("#tx5"),0.5,{scale:0.5, opacity:0},7.9),
+            tl.from($("#tx6"),0.5,{scale:0.5, opacity:0},8.2),
+            tl.from($("#est"),0.5,{opacity:0},7.5),
+
+            tl.to($("#tx3"),0.5,{scale:0.5, opacity:0},11.2),
+            tl.to($("#tx4"),0.5,{scale:0.5, opacity:0},11.5),
+            tl.to($("#tx5"),0.5,{scale:0.5, opacity:0},11.7),
+            tl.to($("#tx6"),0.5,{scale:0.5, opacity:0},11.9),
+            tl.to($("#est"),0.5,{opacity:0},12),
+
+            tl.from($("#back2"),0.5,{opacity:0},12.2),
+            tl.from($("#logo"),0.5,{scale:0.5, opacity:0},12.8);
+            
+            });
+    </script>
+</head>
+
+<body onload="init()">
+    <div id="container" onclick='clickTag'>
+    <a href="javascript:window.open(window.clickTag)">
+    <div id="back" class="imgs"></div>
+    <div id="back2" class="imgs"></div>
+    <div id="cuerpo" class="imgs"></div>
+    <div id="est" class="imgs"></div>
+    <div id="caja" class="imgs"></div>
+    <div id="pro" class="imgs"></div>
+    <div id="bact" class="imgs"></div>
+    <div id="tx1" class="imgs"></div>
+    <div id="tx2" class="imgs"></div>
+    <div id="tx3" class="imgs"></div>
+    <div id="tx4" class="imgs"></div>
+    <div id="tx5" class="imgs"></div>
+    <div id="tx6" class="imgs"></div>
+    <div id="logo" class="imgs"></div>
+    </a>
+
+    </div>
+</body>
+
+</html>
+

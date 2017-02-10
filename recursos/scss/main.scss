@@ -1,0 +1,291 @@
+$green_blue: #2A3D59;
+$black: #000;
+$white: #fff;
+
+@mixin size-banner($w, $h){
+
+  width: $w;
+  height: $h;
+
+}
+#i-banner-container{
+  margin: auto;
+  display: block;
+  position: relative;
+  .i-overlayer{
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+  }
+  #i-banner{
+
+  }
+}
+.beta.warning{
+  background: $black;
+  padding: 5px 10px;
+  color: $white;
+  font-size: 10px;
+  text-align: right;
+}
+.redes{
+  &.footer{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    li{
+      display: inline;
+      text-align: center;
+      a{
+        color: $green_blue;
+      }
+    }
+  }
+}
+header{
+  background: $green_blue;
+  color: $white;
+  padding: 40px 0;
+  h1{
+    small{
+      color: $white;
+    }
+  }
+}
+section{
+  padding: 40px 0;
+}
+table{
+  text-align: left;
+}
+.cert-home{
+  display: inline-block;
+  margin: 5px;
+}
+footer{
+
+  background: $green_blue;
+  padding: 40px 0;
+
+}
+
+/*
+ * Script Banner Test
+ */
+#display-area,
+#display-area img{
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+}
+/*
+ * Ads section
+ */
+#ads{
+  h2{
+    text-align: center;
+  }
+  img{
+    display: block;
+    margin: auto;
+  }
+}
+#ads-display{
+  #banners{
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    ul{
+      font-weight: normal;
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .banner{
+      margin: 40px auto 0;
+      .img-container{
+        img{
+          max-height: 180px;
+          margin: auto;
+        }
+      }
+      .box-banner-parallax{
+        h6{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+#banner{
+
+  .icon-responsive{
+    margin: auto;
+    text-align: center;
+    span{
+      color: $green_blue;
+      &:hover,
+      &.active{
+        color: $black;
+      }
+    }
+  }
+  .iframe-container{
+    overflow: visible;
+    display: table;
+    margin: auto;
+    .iframe-banner{
+      position: relative;
+      z-index: 9;
+      top: 0;
+      left: 0;
+      margin: 0 auto 10px;
+      display: block;
+    }
+  }
+
+  .s120x600{
+    @include size-banner(120px, 600px);
+    iframe{
+      @include size-banner(120px, 600px);
+    }
+  }
+  .s160x600{
+    @include size-banner(160px, 600px);
+    iframe{
+      @include size-banner(160px, 600px);
+    }
+  }
+  .s300x600{
+    @include size-banner(300px, 600px);
+    iframe{
+      @include size-banner(300px, 600px);
+    }
+  }
+  .s300x250{
+    @include size-banner(300px, 250px);
+    iframe{
+      @include size-banner(300px, 250px);
+    }
+  }
+  .s468x60{
+    @include size-banner(468px, 60px);
+    iframe{
+      @include size-banner(468px, 60px);
+    }
+  }
+  .s728x90{
+    @include size-banner(728px, 90px);
+    iframe{
+      @include size-banner(728px, 90px);
+    }
+  }
+  .s300x50{
+    @include size-banner(300px, 50px);
+    iframe{
+      @include size-banner(300px, 50px);
+    }
+  }
+  .s320x50{
+    @include size-banner(320px, 50px);
+    iframe{
+      @include size-banner(320px, 50px);
+    }
+  }
+  .s250x250{
+    @include size-banner(250px, 250px);
+    iframe{
+      @include size-banner(250px, 250px);
+    }
+  }
+  .s200x200{
+    @include size-banner(200px, 200px);
+    iframe{
+      @include size-banner(200px, 200px);
+    }
+  }
+  .s336x280{
+    @include size-banner(336px, 280px);
+    iframe{
+      @include size-banner(336px, 280px);
+    }
+  }
+  .s180x150{
+    @include size-banner(180px, 150px);
+    iframe{
+      @include size-banner(180px, 150px);
+    }
+  }
+  .s320x100{
+    @include size-banner(320px, 100px);
+    iframe{
+      @include size-banner(320px, 100px);
+    }
+  }
+  .s300x100{
+    @include size-banner(300px, 100px);
+    iframe{
+      @include size-banner(300px, 100px);
+    }
+  }
+  .s970x250{
+    @include size-banner(970px, 250px);
+    iframe{
+      @include size-banner(970px, 250px);
+    }
+  }
+  .s254x133{
+    @include size-banner(254px, 133px);
+    iframe{
+      @include size-banner(254px, 133px);
+    }
+  }
+  .s970x90{
+    @include size-banner(970px, 90px);
+    iframe{
+      @include size-banner(970px, 90px);
+    }
+  }
+  .s470x246{
+    @include size-banner(470px, 246px);
+    iframe{
+      @include size-banner(470px, 246px);
+    }
+  }
+  .s560x292{
+    @include size-banner(560px, 292px);
+    iframe{
+      @include size-banner(560px, 292px);
+    }
+  }
+  .s360x50{
+    @include size-banner(360px, 50px);
+    iframe{
+      @include size-banner(360px, 50px);
+    }
+  }
+  .s320x480{
+    @include size-banner(320px, 480px);
+    iframe{
+      @include size-banner(320px, 480px);
+    }
+  }
+  .s600x90{
+    @include size-banner(600px, 90px);
+    iframe{
+      @include size-banner(600px, 90px);
+    }
+  }
+  .s480x80{
+    @include size-banner(480px, 80px);
+    iframe{
+      @include size-banner(480px, 80px);
+    }
+  }
+
+}

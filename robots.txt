@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /recursos/.sass-cache
+Disallow: /recursos/banners
+Disallow: /recursos/css
+Disallow: /recursos/favicons
+Disallow: /recursos/fonts
+Disallow: /recursos/js
+Disallow: /recursos/scss
+Disallow: /recursos/zip-banners
+Disallow: /recursos/.DS_Store
+Disallow: .DS_Store

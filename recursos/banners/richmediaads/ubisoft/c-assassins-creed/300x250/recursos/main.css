@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .25s all ease;
+}
+body{
+  color: #1A1A1A;
+  font-family: "Helvetica";
+}
+.hidden{
+  display: none !important;
+  visibility: hidden !important;
+}
+.banner{
+  width: 300px;
+  height: 250px;
+}
+.sceneA,
+.sceneB,
+.sceneC,
+.sceneD,
+.sceneE{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url('background-300x250.png') no-repeat scroll center center / cover;
+  overflow: hidden;
+}
+h1{
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0px -1px 1px #000;
+  font-family: Helvetica;
+  margin: 40px 0 30px 0;
+  padding: 0 4px;
+}
+ul{
+  list-style: none;
+  padding: 0 0 0 40px;
+  margin: 20px auto 0;
+  width: 200px;
+}
+ul li{
+  list-style-image: url('icon.png');
+  line-height: 30px;
+  height: 30px;
+  margin: 0 0 5px 0;
+}
+ul li span{
+  position: relative;
+  bottom: 10px;
+  color: #fff;
+  text-shadow: 0px -1px 1px #000;
+  font-family: Helvetica;
+  cursor: pointer;
+}
+.img-responsive{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  vertical-align: bottom;
+}
+.logo{
+  width: 250px;
+  margin: 50px auto 20px;
+}
+.logo.final{
+  width: 150px;
+  position: absolute;
+  right: 15px;
+  margin: 10px auto 0;
+}
+.costume{
+  width: 124px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.info-title{
+  position: absolute;
+  width: 180px;
+  right: 0;
+  top: 70px;
+  font-size: 14px;
+  text-align: center;
+  font-family: Helvetica;
+  color: #BC0004;
+  margin: 0;
+  padding: 0 2px;
+}
+.info-desc{
+  position: absolute;
+  width: 180px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  top: 100px;
+  right: 0;
+  font-family: Helvetica;
+  padding: 0 2px;
+  line-height: 1.25em;
+}
+input.btn{
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #D3D3D3;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  text-shadow: 0px -1px 1px #fff;
+  font-family: Helvetica;
+  letter-spacing: 1;
+
+}
+input.btn.final{
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+input.btn:hover,
+input.btn:focus,
+input.btn:active{
+  background-color: #BC0004;
+  color: #fff;
+  text-shadow: 0px -1px 1px #1A1A1A;
+  font-family: Helvetica;
+  letter-spacing: 1;
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://tools.cerebro.agency/</title>
+  <link>http://tools.cerebro.agency/</link>
+
+<item>
+     <link>http://tools.cerebro.agency/</link>
+     <title>Herramientas - Marketing Digital - Cerebro Smart Media</title>
+     <description>Herramientas - Marketing Digital - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.cerebro.agency/script-banner-test/index.html</link>
+     <title>Herramientas - Script Banner Test - Cerebro Smart Media</title>
+     <description>Herramientas - Script Banner Test - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.cerebro.agency/banner-video-vast/index.html</link>
+     <title>Herramientas - Banner Video VAST - Cerebro Smart Media</title>
+     <description>Herramientas - Banner Video VAST - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.cerebro.agency/track-impression-conversion/index.html</link>
+     <title>Herramientas - Track impression conversion - Cerebro Smart Media</title>
+     <description>Herramientas - Track impression conversion - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.cerebro.agency/especificaciones-para-banners/index.html</link>
+     <title>Herramientas - Especificaciones para banners - Cerebro Smart Media</title>
+     <description>Herramientas - Especificaciones para banners - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.cerebro.agency/banner-verification/index.html</link>
+     <title>Herramientas - Banner Verification - Cerebro Smart Media</title>
+     <description>Herramientas - Banner Verification - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.cerebro.agency/galeria-de-banners/index.html</link>
+     <title>Herramientas - Galería de banners - Cerebro Smart Media</title>
+     <description>Herramientas - Galería de banners - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.cerebro.agency/certificaciones/index.html</link>
+     <title>Herramientas - Certificaciones - Cerebro Smart Media</title>
+     <description>Herramientas - Certificaciones - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.cerebro.agency/galeria-de-banners/display-ads.html</link>
+     <title>Herramientas - Galería de banners - Cerebro Smart Media</title>
+     <description>Herramientas - Galería de banners - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.cerebro.agency/galeria-de-banners/richmedia-ads.html</link>
+     <title>Herramientas - Galería de banners - Cerebro Smart Media</title>
+     <description>Herramientas - Galería de banners - Cerebro Smart Media</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

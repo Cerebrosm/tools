@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+    <!-- SCRVERSION: screenad_interface_1.0.3 -->
+    <!-- SCRFORMAT: banner -->
+    <!-- SCRWIDTH: 320 -->
+    <!-- SCRHEIGHT: 50 -->
+    
+
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        #container {
+            cursor: pointer;
+            font-size: 11px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        .imgs{
+            position: absolute;
+        }
+        #back{
+            background: url('back.jpg') no-repeat;
+            width: 320px;
+            height: 50px;
+            top:0px;
+            left:0px;
+        }
+        #back2{
+            background: url('back2.jpg') no-repeat;
+            width: 320px;
+            height: 50px;
+            top:0px;
+            left:0px;
+        }
+        #tx1{
+            background: url('tx1.png') no-repeat;
+            width: 152px;
+            height: 39px;
+            top:5px;
+            left:13px;
+        }
+        #tx2{
+            background: url('tx2.png') no-repeat;
+            width: 150px;
+            height: 38px;
+            top:6px;
+            left:7px;
+        }
+        #tx3{
+            background: url('tx3.png') no-repeat;
+            width: 166px;
+            height: 31px;
+            top:6px;
+            left:7px;
+        }
+        #caja{
+            background: url('caja.png') no-repeat;
+            width: 138px;
+            height: 45px;
+            top:5px;
+            left:178px;
+        }
+        #int{
+            background: url('int.png') no-repeat;
+            width: 76px;
+            height: 50px;
+            top:0px;
+            left:200px;
+        }
+
+        /* ----- Probioticos ------ */
+
+        #prob,#prob1,#prob2,#prob3,#prob4,#prob5,#prob6{
+            background: url('prob.png') no-repeat;
+        }
+        #prob1,#prob2,#prob3,#prob4,#prob5,#prob6{
+            width: 16px;
+            height: 14px;
+            background-size: contain;
+        }
+        #prob{
+            width: 58px;
+            height: 50px;
+            top: -1px;
+            left: 251px;
+        }
+        #prob1{
+            top: -9px;
+            left: 217px;
+        }
+        #prob2{
+            top: 7px;
+            left: 182px;
+        }
+        #prob3{
+            top: 14px;
+            left: 216px;
+        }
+        #prob4{
+            top: 32px;
+            left: 187px;
+        }
+        #prob5{
+            top: 35px;
+            left: 151px;
+        }
+        #prob6{
+            top: 43px;
+            left: 104px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+
+        var clickTag = "http://cuentademoperformicsmx.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=cl&a.si=820&a.te=1807&a.ra=[RANDOM]&g.lu=";
+
+        function init() {
+
+            screenad.setAlignment('banner', 'banner');
+            screenad.setSize("320px", "50px");
+            screenad.setSticky(true);
+            screenad.setZIndex(1);
+            screenad.setOffset(0, 0)
+            screenad.position();
+           
+        }
+
+        $(document).ready(function(){
+        var tl=new TimelineLite()
+
+        tl.from($("#tx1"),0.5,{opacity:0, left:-500},0.4),
+        tl.from($("#int"),0.5,{opacity:0, scale:0.5},0.8),
+
+        tl.to($("#tx1"),0.5,{opacity:0, left:-500},4),
+        tl.to($("#int"),0.5,{opacity:0},4.2),
+
+        tl.from($("#back2"),0.5,{opacity:0},4.5),
+
+        tl.from($("#tx2"),0.5,{opacity:0, left:-500},4.2),
+
+        tl.from($("#prob"),0.5,{opacity:0, scale:0.5},4),
+        tl.from($("#prob1"),0.5,{opacity:0, scale:0.5},4.2),
+        tl.from($("#prob2"),0.5,{opacity:0, scale:0.5},4.4),
+        tl.from($("#prob3"),0.5,{opacity:0, scale:0.5},4.6),
+        tl.from($("#prob4"),0.5,{opacity:0, scale:0.5},4.8),
+        tl.from($("#prob5"),0.5,{opacity:0, scale:0.5},5),
+        tl.from($("#prob6"),0.5,{opacity:0, scale:0.5},5.2),
+
+        tl.to($("#tx2"),0.5,{opacity:0, left:-500},7.8),
+
+        tl.to($("#prob"),0.5,{opacity:0, scale:0.5},7),
+        tl.to($("#prob1"),0.5,{opacity:0, scale:0.5},7.2),
+        tl.to($("#prob2"),0.5,{opacity:0, scale:0.5},7.4),
+        tl.to($("#prob3"),0.5,{opacity:0, scale:0.5},7.6),
+        tl.to($("#prob4"),0.5,{opacity:0, scale:0.5},7.8),
+        tl.to($("#prob5"),0.5,{opacity:0, scale:0.5},8),
+        tl.to($("#prob6"),0.5,{opacity:0, scale:0.5},8.2),
+
+        tl.to($("#back2"),0.5,{opacity:0},8.2),
+
+        tl.from($("#tx3"),0.5,{opacity:0, left:-500},8.4),
+
+        tl.from($("#caja"),0.5,{left:500, opacity:0},8.9);
+    });
+
+    </script>
+</head>
+
+<body onload="init()">
+    <div id="container" onclick='clickTag'>
+    <a href="javascript:window.open(window.clickTag)">
+    <div id="back" class="imgs"></div>
+    <div id="back2" class="imgs"></div>
+
+    <div id="tx1" class="imgs"></div>
+    <div id="tx2" class="imgs"></div>
+    <div id="tx3" class="imgs"></div>
+
+    <div id="prob" class="imgs"></div>
+    <div id="prob1" class="imgs"></div>
+    <div id="prob2" class="imgs"></div>
+    <div id="prob3" class="imgs"></div>
+    <div id="prob4" class="imgs"></div>
+    <div id="prob5" class="imgs"></div>
+    <div id="prob6" class="imgs"></div>
+
+    <div id="caja" class="imgs"></div>
+    <div id="int" class="imgs"></div>
+    </a>
+    </div>
+</body>
+
+</html>
+

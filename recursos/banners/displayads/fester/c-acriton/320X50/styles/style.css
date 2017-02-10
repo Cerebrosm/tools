@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+}
+button {
+	position:relative;
+	bottom: 0px;
+	right: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+	height: 50px;
+	width: 320px;
+}
+#clickthrough-button {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 320px;
+}
+#swiffycontainer {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.label {
+    color: #0D2A4D;
+    position: absolute;
+    margin-left: 10px;
+    top: 35px;
+}
+swiffy ¨{
+	position:absolute;
+	bottom: 0px;
+	right: 0px;
+    border: none;
+	height: 50px;
+	width: 320px;
+}
+body {
+    margin: 0px;
+}
+#ad {
+    display: block;
+    border: rgb(145, 153, 153) 1px solid;
+    overflow: hidden;
+	height: 48px;
+	width: 318px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.#buttons {
+	position: static;
+	bottom: 0px;
+	right: 0px;
+	height: 50px;
+	width: 320px;
+	background-color: rgba(o,o,o,o,o);
+}
+.label {
+    font-size: 14px;
+    top: 65px;
+}

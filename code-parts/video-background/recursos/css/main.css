@@ -1,0 +1,58 @@
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0; }
+
+.container-video {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  transition: .25s all ease; }
+  .container-video .video {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transition: .25s all ease;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .container-video .gif-movil {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    background: url("../gifs/gif-adcom.gif") no-repeat scroll center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transition: .25s all ease; }
+
+@media screen and (min-width: 768px) {
+  .container-video .video {
+    display: block;
+    visibility: visible;
+    opacity: 1; }
+  .container-video .gif-movil {
+    display: none;
+    visibility: hidden;
+    opacity: 0; } }
+
+/*# sourceMappingURL=main.css.map */

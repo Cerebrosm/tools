@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta name=”ad.size” content=”width=300,height=50”> 
+<script type="text/javascript"> var clickTag= "https://www.marti.mx/?utm_source=dsp&utm_medium=cerebro-dsp&utm_content=300x50-9msi&utm_campaign=120-horas"; </script> 
+ 
+ 
+ 
+<script src="js/mov.js"></script>
+<script>
+imagenes = new Array();
+//Agrega tantas imágenes como necesites en el array
+imagenes[0] = "img/info01.png";
+imagenes[1] = "img/info02.png";
+siguiente = 0;
+
+function CambiaImagen()
+{
+dimensiones = $("#box-imagen").width();
+$("#box-imagen img").css({left: -dimensiones+"px"}).attr("src", imagenes[siguiente]);
+$("#box-imagen img").animate({left: "+="+dimensiones});
+$("#box-imagen a").attr("href", imagenes[siguiente]);
+
+siguiente = siguiente+1;
+if (siguiente >= imagenes.length)
+{
+siguiente = 0;
+}
+//Aquí puedes colocar el tiempo para cada transición de imagen
+transicion = 2500;
+setTimeout("CambiaImagen()", transicion);
+}
+
+$(function(){
+CambiaImagen();
+});
+
+</script>
+
+<style>
+
+#box
+{
+width: 300px;
+background-image:url(img/back.jpg);
+background-repeat:no-repeat;
+padding:0px;
+border-radius:0px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#box-imagen{
+width: 300px;
+height: 50px;
+overflow: hidden;
+}
+
+#box-imagen img
+{
+position: relative;
+width: 100%;
+height: 100%;
+}
+</style>
+</head>
+<body>
+<div id="box">
+
+<a href="javascript:window.open(window.clickTag)"  target="_parent">
+<div id="box-imagen">
+
+<img src="img/info01.png">
+
+</div>
+</a>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
