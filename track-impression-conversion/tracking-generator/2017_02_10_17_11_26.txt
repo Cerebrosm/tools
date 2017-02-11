@@ -1,0 +1,9 @@
+<!-- Tracking https://google.com.mx -->
+<iframe src='https://google.com.mx' width='1' height='1' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercoor='#000000'</iframe>
+
+<!-- Tracking https://facebook.com -->
+<iframe src='https://facebook.com' width='1' height='1' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercoor='#000000'</iframe>
+
+<!-- Tracking https://youtube.com -->
+<iframe src='https://youtube.com' width='1' height='1' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercoor='#000000'</iframe>
+

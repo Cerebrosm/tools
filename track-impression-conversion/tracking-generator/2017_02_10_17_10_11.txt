@@ -1,0 +1,15 @@
+<!-- Tracking https://google.com.mx -->
+<img src='https://google.com.mx' border='0' height='1' width='1' alt='Advertisement' />
+<iframe src='https://google.com.mx' width='1' height='1' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercoor='#000000'</iframe>
+<script language='JavaScript1.1' src='https://google.com.mx'</script>
+
+<!-- Tracking https://facebook.com -->
+<img src='https://facebook.com' border='0' height='1' width='1' alt='Advertisement' />
+<iframe src='https://facebook.com' width='1' height='1' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercoor='#000000'</iframe>
+<script language='JavaScript1.1' src='https://facebook.com'</script>
+
+<!-- Tracking https://youtube.com -->
+<img src='https://youtube.com' border='0' height='1' width='1' alt='Advertisement' />
+<iframe src='https://youtube.com' width='1' height='1' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercoor='#000000'</iframe>
+<script language='JavaScript1.1' src='https://youtube.com'</script>
+

@@ -1,8 +1,11 @@
+.loading {
+  display: block;
+  margin: 15px auto;
+  text-align: center; }
+
 #i-banner-container {
   margin: auto;
   display: block;
-  -webkit-transition: .25s all ease;
-  transition: .25s all ease;
   position: relative; }
   #i-banner-container .i-overlayer {
     position: absolute;
@@ -243,3 +246,5 @@ footer {
   #banner .s480x80 iframe {
     width: 480px;
     height: 80px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -34,29 +34,7 @@ $(document).ready(function(){
     });
 
   });
-  $("#conversion").on("click", function(){
 
-    // Test btn
-    $('#display-area-conversion').html('');
-    var getConversionLine = $('#text-area-conversion').val().split(/\n/);
-    var conversionLines = [];
-    for (var i = 0; i < getConversionLine.length; i++) {
-      if (/\S/.test(getConversionLine[i])) {
-        var imgConversion = "<code>&lt;!-- BEGIN IMG TAG TRACKING CODE --&gt;</code>" + "<br>";
-        imgConversion += "<code>&lt;img src='" + getConversionLine[i] + "' border='0' height='1' width='1' alt='Advertisement' /&gt;</code>";
-        imgConversion += "<br>" + "<code>&lt;!-- END IMG TAG TRACKING CODE --&gt;</code>" + "<br><br>";
-        var iframeConversion = "<code>&lt;!-- BEGIN IFRAME TAG TRACKING CODE --&gt;</code>" + "<br>";
-        iframeConversion += "<code>&lt;iframe src='" + getConversionLine[i] + "' width='1' height='1' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercoor='#000000'&gt;&lt;/iframe&gt;</code>";
-        iframeConversion += "<br>" + "<code>&lt;!-- BEGIN IFRAME TAG TRACKING CODE --&gt;</code>" + "<br><br>";
-        var scriptConversion = "<code>&lt;!-- BEGIN SCRIPT TAG TRACKING CODE --&gt;</code>" + "<br>";
-        scriptConversion += "<code>&lt;script language='JavaScript1.1' src='" + getConversionLine[i] + "'&gt;&lt;/script&gt;</code>";
-        scriptConversion += "<br>" + "<code>&lt;!-- BEGIN SCRIPT TAG TRACKING CODE --&gt;</code>" + "<br><br>";
-
-        conversionLines.push($.trim(imgConversion + iframeConversion + scriptConversion));
-      }
-    }
-    postscribe('#display-area-conversion', conversionLines);
-  });
   $("#form-zip").submit(function(e){
     /*
     e.preventDefault();
@@ -83,3 +61,10 @@ $(document).ready(function(){
   });
 
 });
+
+
+function loadingToogle(){
+  setTimeout(function(){
+    $(".loading").toggleClass("hidden");
+  }, 500);
+}

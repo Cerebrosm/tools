@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Description -->
-	<title>Herramientas - Track impression conversion - Cerebro Smart Media</title>
+	<title>Herramientas - Bulk Upload for DoubleClick - Cerebro Smart Media</title>
 	<meta content="Cerebro Smart Media - Agencia de Marketing digital dedicada a innovar en el área de publicidad digital" name="description">
   <meta content="cerebro, smart, media, cerebrosm, cerebro smart, cerebro smart media, agencia, agencia digital, agencia de marketing digital, publicidad digital" name="keywords">
 
@@ -71,7 +71,7 @@
 					<a href="/" target="_self">
 						<img class="img-responsive logo" src="/recursos/images/tool-logo-white.png"/>
 					</a>
-  				<h1>Cerebro Smart Media <small>Track impression conversion</small></h1>
+  				<h1>Cerebro Smart Media <small>Bulk upload for DoubleClick</small></h1>
 				</div>
 			</div>
 		</div>
@@ -83,76 +83,67 @@
 
 			<div class="row">
 
-				<div class="col-md-4">
-					<h2>Track impression conversion</h2>
-					<p>En esta aplicación web puedes transformar tus simples ligas de impresiones o Track Impressions a su versión de <code>&lt;script&gt;</code>, <code>&lt;img/&gt;</code> <code>&lt;iframe&gt;</code></p>
-					<p>Con los códigos proporcionados podrás implementarlos en sus diferentes formas en el caso de que un clicente o el servidor que se este usando solamente reciba un tipo de formato.</p>
+				<div class="col-md-12">
+					<h2>Bulk Upload for DoubleClick</h2>
+					<p>Te mostraremos las mejores prácticas para generar el archivo en formato Excel y formato CSV para cargar campañas de publicidad en masa y agilizar los tiempos en la creación de las campañas publicitarias, este apartado explica las mejores prácticas para <a href="http://doubleclickbygoogle.com/" target="_blank">DoubleClick by Google</a>.</p>
 				</div>
-				<div class="col-md-8">
-					<textarea id="text-area-conversion" class="form-control" cols="20" rows="10" required></textarea>
+				<div class="col-md-12">
 
-					<div class="conversion-options pull-right">
-						<div class="radio">
-					    <label>
-					      <input name="formato" type="radio" data-formato="all" checked> Todos los formatos
-					    </label>
-					  </div>
-						<div class="radio">
-					    <label>
-					      <input name="formato" type="radio" data-formato="img"> Solo IMG
-					    </label>
-					  </div>
-						<div class="radio">
-					    <label>
-					      <input name="formato" type="radio" data-formato="iframe"> Solo IFRAME
-					    </label>
-					  </div>
-						<div class="radio">
-					    <label>
-					      <input name="formato" type="radio" data-formato="javascript"> Solo JAVASCRIPT
-					    </label>
-					  </div>
-					</div>
-
-					<div class="clearfix"></div>
-
-					<input class="btn btn-default pull-left" id="demo-conversion" type="button" name="Demo" value="Demo"/>
-					<input class="btn btn-default pull-right" id="conversion" type="button" name="Convertir" value="Convertir"/>
-
-					<div class="clearfix"></div>
+					<table class="table table-condensed">
+						<tr>
+							<th>Creative name</th>
+							<th>Main asset file name</th>
+							<th>Backup image file name (for HTML5 only)</th>
+							<th>Click-through URL</th>
+							<th>Appended HTML tag (Optional)</th>
+							<th>Integration code (Optional)</th>
+							<th>Notes (Optional)</th>
+						</tr>
+						<tr>
+							<td>El nombre de la creatividad en el Bid Manager</td>
+							<td>La URL a la cual el usuario es mandado después de interactuar con el creativo o publicidad</td>
+							<td>El nombre del archivo principal del creativo, puedes ser <b>.zip</b>, la extensión de la imagen o la extensión del video</td>
+							<td><b>Solamente para las creatividades en HTML5, colocar el nombre de la imagen de respaldo</b></td>
+							<td>Impression tracking</td>
+							<td>Código para uso de un sistema de reporte externo</td>
+							<td>Notas acerca de la creatividad</td>
+						</tr>
+						<tr>
+							<td colspan="7"><p class="text-center"><i>En la parte de abajo se muestra un ejemplo de una campaña real. Este caso es una campaña display con imagen.</i></p></td>
+						</tr>
+						<tr>
+							<td>160x600_Itallianis_buongiorno_crepas</td>
+							<td>160x600_Itallianis_buongiorno_crepas.jpg</td>
+							<td></td>
+							<td>https://bs.serving-sys.com/serving/adServer.bs?cn=trd&mc=click&pli=20338868&PluID=0&ord=[timestamp]</td>
+							<td><code>&lt;iframe src='https://bs.serving-sys.com/serving/adServer.bs?cn=display&c=19&mc=imp&pli=20338868&PluID=0&ord=[timestamp]&rtu=-1' width='1' height='1' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercoor='#000000'&gt;&lt;/iframe&gt;</code></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="7"><p class="text-center"><i>En la parte de abajo se muestra un ejemplo de una campaña real. Este caso es una campaña display HTML5.</i></p></td>
+						</tr>
+						<tr>
+							<td>160x600_Itallianis_buongiorno_crepas</td>
+							<td>160x600_Itallianis_buongiorno_crepas.zip</td>
+							<td>160x600_Itallianis_buongiorno_crepas.jpg</td>
+							<td>https://bs.serving-sys.com/serving/adServer.bs?cn=trd&mc=click&pli=20338868&PluID=0&ord=[timestamp]</td>
+							<td><code>&lt;iframe src='https://bs.serving-sys.com/serving/adServer.bs?cn=display&c=19&mc=imp&pli=20338868&PluID=0&ord=[timestamp]&rtu=-1' width='1' height='1' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercoor='#000000'&gt;&lt;/iframe&gt;</code></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
 
 				</div>
 
+			</div>
+
+			<div class="row">
+				  <p><a class="btn btn-primary btn-lg" href="/recursos/files/bulk_template.xls" role="button">Descargar archivo en EXCEL</a></p>
+					<p><a class="btn btn-primary btn-lg" href="/recursos/files/bulk_template.csv" role="button">Descargar archivo en CSV</a></p>
 			</div>
 
 			<hr>
-
-			<div class="row">
-
-				<div class="col-md-12">
-
-					<p>En este espacio se muestra la información.</p>
-					<div class="loading hidden">
-						<i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
-						<span class="sr-only">Cargando...</span>
-					</div>
-					<div class="clearfix"></div>
-
-					<div class="table-responsive">
-						<table id="display-area-conversion" class="table table-condensed display-area">
-
-						</table>
-					</div>
-
-					<ul id="tracking-files" class="tracking-files">
-
-					</ul>
-
-					<div class="clearfix"></div>
-
-				</div>
-
-			</div>
 
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
